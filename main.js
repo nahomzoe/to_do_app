@@ -4,8 +4,6 @@ const completed = document.querySelector("#completed");
 const itemText = document.querySelector("#add-item-text");
 const clearTodo = document.querySelector("#clear-todo");
 
-const checkItem = document.querySelectorAll(".check-item");
-
 let items = [];
 
 const addItem = () => {
@@ -27,14 +25,8 @@ const printItem = () => {
             ${itemText.value} 
             </span>
             <button class="delete-item">Delete</button>
-            
-        
-    </li>`
+      </li>`
   );
-  /*const checkList = document.querySelectorAll(".check-item");
-  if (checkList === true) {
-    console.löog(items);
-  }*/
   itemText.value = "";
 };
 
@@ -57,20 +49,15 @@ const completeItem = (event) => {
   completed.insertAdjacentHTML(
     "beforeend",
     `<li>
-              <span id="completed-item">
-                  ${itemName} 
-                  </span>
-                  <button class="delete-item1">Delete</button>
-                  
-             
-          </li>`
+          <span id="completed-item">
+              ${itemName} 
+          </span>
+          <button class="delete-item1">Delete</button>
+        </li>`
   );
 };
 
 const deleteItemList = (event) => {
-  event.target.parentElement.remove();
-};
-const deleteCompleted = (event) => {
   event.target.parentElement.remove();
 };
 
