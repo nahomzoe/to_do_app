@@ -52,9 +52,11 @@ const completeItem = (event) => {
           <span id="completed-item">
               ${itemName} 
           </span>
-          <button class="delete-item1">Delete</button>
+          <button class="delete-item">Delete</button>
         </li>`
   );
+  attachCompletedEvent();
+  deleteItemList(event);
 };
 
 const deleteItemList = (event) => {
@@ -71,6 +73,13 @@ const attachEvent = () => {
     .querySelector("#todo")
     .lastChild.querySelector(".check-item");
   checkBox.addEventListener("click", completeItem);
+};
+
+const attachCompletedEvent = () => {
+  let deleteItem = document
+    .querySelector("#completed")
+    .lastChild.querySelector(".delete-item");
+  deleteItem.addEventListener("click", deleteItemList);
 };
 
 addButton.addEventListener("click", addItem);
