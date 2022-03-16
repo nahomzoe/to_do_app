@@ -1,0 +1,39 @@
+body {
+  background: #fff;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+.main {
+  display: block;
+
+  width: 500px;
+  margin: 200px auto 0;
+}
+
+button {
+  color: rgb(153, 155, 152);
+  font-size: 14px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+  background: none;
+  border: 0px;
+}
+input {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+#completed-item {
+  text-decoration: line-through;
+  color: rgb(8, 5, 5);
+}
