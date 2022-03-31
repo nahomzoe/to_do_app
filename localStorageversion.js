@@ -35,6 +35,7 @@ const printItem = (itemValue) => {
 
 const clearTodoLists = () => {
   todo.innerHTML = "";
+  deletlocal();
 };
 
 const deleteItemList = (event) => {
